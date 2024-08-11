@@ -1,0 +1,28 @@
+<div class="sign-up-wrapper">
+    <div class="sign-up-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+       <img src="assets/illustration.png" alt="Illustration" class="illustration"> 
+    </div>
+    <div class="sign-up-right">
+      <h2>Create Account</h2>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <form (ngSubmit)="onNext()">
+        <div class="form-group">
+          <label for="email">Enter Email ID</label>
+          <input type="email" id="email" [(ngModel)]="signUpData.email" name="email" placeholder="Loremipsum@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Enter Full Name</label>
+          <input type="text" id="name" [(ngModel)]="signUpData.name" name="name" placeholder="Full name" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Create Password</label>
+          <input type="password" id="password" [(ngModel)]="signUpData.password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn-next">Next</button>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+<div class="container">
+  <!-- <div class="left-panel">
+    <img src="assets/logo.png" alt="Logo"> 
+    <img src="assets/illustration.png" alt="Illustration">
+  </div> -->
+  <div class="right-panel">
+    <app-sign-up-step1 *ngIf="currentStep === 1"></app-sign-up-step1>
+    <app-sign-up-step2 *ngIf="currentStep === 2"></app-sign-up-step2>
+    <app-sign-up-success *ngIf="currentStep === 3"></app-sign-up-success>
+    
+  </div>
+
+  
+</div>
